@@ -77,12 +77,12 @@ const Loading = () => {
         <S.Contents>
           {Loading ? (
             <>
-              <S.Title>당신에게 맞는 노트북을 찾고 있습니다.</S.Title>
+              <S.Title>당신에게 맞는 직종을 찾고있습니다.</S.Title>
               <HashLoader color="white" />
             </>
           ) : (
             <>
-              <S.Title>당신에게 맞는 노트북을 찾았습니다.</S.Title>
+              <S.Title>당신에게 맞는 직종을 찾았습니다.</S.Title>
               <StyledBtn onclick={handleClickButton} msg={"결과보기"} />
             </>
           )}

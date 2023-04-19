@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Button from "react-bootstrap/Button";
 import { useNavigate, useSearchParams } from "react-router-dom";
-// import { ResultData } from "../assets/data/resultdata";
+import { ResultData } from "../assets/data/resultdata";
 
 const CustomBtnStyle = {
   width: 220,
@@ -106,23 +106,24 @@ const Result = () => {
   const type = searchParams.get("type");
   const [resultData, setResultData] = useState({});
 
-  //   useEffect(() => {
-  //     const result = ResultData.find((s) => s.best === type);
-  //     setResultData(result);
-  //   }, [type]);
+  useEffect(() => {
+    const result = ResultData.find((s) => s.best === type);
+    setResultData(result);
+  }, [type]);
   return (
     <S.Container>
       <S.Wrapper>
         <S.Header>결과</S.Header>
-        <S.LogoImage>
+        {/* <S.LogoImage>
           <S.InnerImg>
             <p>테스트</p>
-            {/* <S.IImg src={resultData.image} alt="옴팡사진" /> */}
+            <S.IImg src={resultData.image} alt="옴팡사진" />
           </S.InnerImg>
-        </S.LogoImage>
+        </S.LogoImage> */}
         <S.Desc>{resultData.name}</S.Desc>
+        <S.Desc>{resultData.desc}</S.Desc>
 
-        <S.SubDesc>제조사 : {resultData.make}</S.SubDesc>
+        {/* <S.SubDesc>제조사 : {resultData.make}</S.SubDesc> */}
 
         <S.BtnGroup>
           <Button

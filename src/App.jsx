@@ -12,8 +12,8 @@ const App = () => {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/question" element={<Question />} />
-          {/* <Route path="/loading" element={<Loading />} /> */}
-          {/* <Route path="/result" element={<Result />} /> */}
+          <Route path="/loading" element={<Loading />} />
+          <Route path="/result" element={<Result />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
