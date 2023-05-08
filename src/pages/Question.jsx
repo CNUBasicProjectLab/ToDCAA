@@ -65,7 +65,7 @@ const Question = () => {
     { id: "EI", score: 0 },
     { id: "NS", score: 0 },
     { id: "FT", score: 0 },
-    { id: "PJ", score: 0 },
+    // { id: "PJ", score: 0 },
   ]);
 
   const handleClickAnswer = (add, type) => {
