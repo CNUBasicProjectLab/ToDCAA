@@ -41,7 +41,7 @@
   overflow: hidden;
   height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
-  background-color: black;
+  /* background-color: black; */
 }
 .right-enter {
   transform: translateX(100%);

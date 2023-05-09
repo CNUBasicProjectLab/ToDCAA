@@ -28,7 +28,7 @@ const S = {
     display: flex;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
     flex-direction: column;
     align-items: center;
   `,
@@ -62,7 +62,7 @@ const S = {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    color: black;
+    /* color: black; */
   `,
   Title: styled.div`
     font-size: 2.5rem;

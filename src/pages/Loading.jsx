@@ -13,7 +13,7 @@ const S = {
     display: flex;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: white;
     flex-direction: column;
     align-items: center;
   `,
@@ -28,7 +28,7 @@ const S = {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: white;
   `,
   Contents: styled.div`
     display: flex;
@@ -44,7 +44,7 @@ const S = {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    color: white;
+    color: black;
     margin-top: 2rem;
     margin-bottom: 5rem;
   `,
@@ -78,7 +78,7 @@ const Loading = () => {
           {Loading ? (
             <>
               <S.Title>당신에게 맞는 직종을 찾고있습니다.</S.Title>
-              <HashLoader color="white" />
+              <HashLoader color="black" />
             </>
           ) : (
             <>
