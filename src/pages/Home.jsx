@@ -43,7 +43,7 @@ const S = {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     border-radius: 15px;
   `,
   InWrapper: styled.div`
