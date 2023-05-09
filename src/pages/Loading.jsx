@@ -78,7 +78,7 @@ const Loading = () => {
           {Loading ? (
             <>
               <S.Title>당신에게 맞는 직종을 찾고있습니다.</S.Title>
-              <HashLoader color="black" />
+              <HashLoader color="#007AFF" />
             </>
           ) : (
             <>
